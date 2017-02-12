@@ -8,15 +8,10 @@ namespace HE_Atelye_CommonMailLibrary.Tests {
         private readonly MailRequest mailRequest;
 
         public MailRequestTest() {
-            mailRequest = FakeItEasy.A.Fake<MailRequest>(options => options.ConfigureFake(request =>
-            {
-                request.Subject = string.Empty;
-                request.Body = string.Empty;
-                request.From = string.Empty;
-                
-            }));
-        }
 
+            mailRequest = FakeItConfiguration.CreateMailRequest();                      
+        }
+        
         [Fact]
         public void MailRequest_Properties_Test() {
             //assert
