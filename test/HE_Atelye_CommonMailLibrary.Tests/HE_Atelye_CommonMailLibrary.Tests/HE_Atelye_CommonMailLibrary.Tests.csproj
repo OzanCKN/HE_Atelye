@@ -64,12 +64,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="FakeItConfiguration.cs" />
     <Compile Include="MailProviderBase.cs" />
-=======
     <Compile Include="MailProviderBaseTest.cs" />
->>>>>>> upstream/master
     <Compile Include="MailRequestTest.cs" />
     <Compile Include="MailRequestValidatorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
